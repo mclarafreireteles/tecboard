@@ -1,0 +1,15 @@
+:root {
+	--grafite--fundo-componentes: #212121;
+	--verde-destaques: #17d9b1;
+	--cinza-médio: #4a4949;
+	--branco--texto: #fff;
+	--background: #06151a;
+    --font-family: "Work Sans", sans-serif;
+    --second-family: "Orbitron", sans-serif;
+    --third-family: "Inter", sans-serif;
+    --font3: "Material Icons", sans-serif;
+}
+
+* {
+    font-family: var(--font-family);
+}

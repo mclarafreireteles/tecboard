@@ -1,0 +1,27 @@
+.button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    background: var(--verde-destaques);
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--grafite--fundo-componentes);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+}
+
+.button:hover {
+    background: var(--cinza-médio);
+    color: var(--branco--texto);
+}
+
+.button:focus {
+    outline: 2px solid var(--branco--texto);
+    outline-offset: 2px;
+}
+.button:active {
+    background: var(--grafite--fundo-componentes);
+    color: var(--branco--texto);
+}
