@@ -1,16 +1,44 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tecboard
 
-Currently, two official plugins are available:
+Hub for Tech Events. A simple React 19 project built to explore and practice modern React concepts!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Tecboard is a web application that allows users to explore and manage technology events.
+It was developed as a learning project to practice React 19, focusing on components, state management, and application structure.
+## Features
 
-## Expanding the ESLint configuration
+- Add and manage events with images
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- View events in a clean, responsive layout
+
+- Built with modern React practices
+
+
+## Lessons Learned
+
+During the development of Tecboard, I learned and applied key concepts such as:
+
+- React 19 fundamentals
+
+- Develop interactive forms using FormData and custom selectors. 
+
+- React 19 fundamentals and component lifecycle (using hooks).  
+
+- State management with useState
+
+- React project setup and configuration
+
+
+## Tech Stack
+
+| Tech | Description |
+|------|--------------|
+| **React 19** | Frontend library for building interactive UIs |
+| **Vite** | Fast build tool and dev server for modern web projects |
+| **JavaScript (ES6+)** | Main programming language used |
+| **CSS Modules** | Scoped styling approach for clean, maintainable CSS |
+
