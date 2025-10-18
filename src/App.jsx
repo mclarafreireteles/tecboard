@@ -54,17 +54,20 @@ function App() {
       </header>
       <Banner />
       <EventForm themes={themes} onSubmit={addEvent} />
-      {themes.map(function (theme) {
-        return (
-          <section key={theme.id}>
-            <Theme theme={theme}/>
-            {events.map(function (events, id) {
-              return <EventCard key={id} event={events}/>
-            })}
-          </section>
-        )
-      })}
-
+      <section className="container">
+        {themes.map(function (theme) {
+          return (
+            <section className='theme' key={theme.id}>
+              <Theme theme={theme} />
+              <div className="events">
+                {events.map(function (events, id) {
+                  return <EventCard key={id} event={events} />
+                })}
+              </div>
+            </section>
+          )
+        })}
+      </section>
     </main>
   )
 }
