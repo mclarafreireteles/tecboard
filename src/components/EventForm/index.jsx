@@ -12,8 +12,8 @@ export function EventForm({ themes, onSubmit }) {
     console.log('opa, criar novo evento ', formData);
     const event = {
         cover: formData.get('cover'),
-        theme: themes.find(function (item) {
-          return item.id == formData.get('theme')
+        theme: themes.find(function (theme) {
+          return theme.name == formData.get('theme')
         }),
         date: new Date(formData.get('date')),
         title: formData.get('name')
@@ -35,7 +35,7 @@ export function EventForm({ themes, onSubmit }) {
         </FieldForm>
         <FieldForm>
           <LabelForm htmlFor="theme">Tema do evento</LabelForm>
-          <SelectListForm options={themes} name="theme" id="theme" />
+          <SelectListForm options={themes} name="theme" id="theme" required />
         </FieldForm>
         <FieldForm>
           <LabelForm htmlFor="cover">Endereço da imagem de capa</LabelForm>

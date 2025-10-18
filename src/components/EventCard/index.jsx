@@ -1,6 +1,7 @@
 import './event-card.style.css'
 
 export function EventCard ({ event }){
+    console.log(event);
     return (
         <div className='card-event'>
             <img src={event.cover} alt={event.title} />

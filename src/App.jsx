@@ -1,11 +1,11 @@
 import './App.css'
+import { useState } from 'react'
 import { Banner } from './components/Banner'
 import { EventForm } from './components/EventForm'
 import { EventCard } from './components/EventCard'
 import { Theme } from './components/Theme'
 
 function App() {
-
   const themes = [
     {
       id: 1,
@@ -34,17 +34,17 @@ function App() {
 
   ]
 
-  const events = [
+  const [events, setEvents] = useState([
     {
       cover: 'https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_1.png',
       theme: themes[0],
       date: new Date(),
       title: 'Mulheres no front'
     }
-  ]
+  ])
 
-  function addEvent(event){
-
+  function addEvent(event) {
+    setEvents([...events, event]);
   }
 
   return (
@@ -52,19 +52,19 @@ function App() {
       <header>
         <img src="/logo.png" alt="" />
       </header>
-      <Banner/>
-      <EventForm themes={themes} onSubmit={addEvent}/>
+      <Banner />
+      <EventForm themes={themes} onSubmit={addEvent} />
       {themes.map(function (theme) {
         return (
           <section key={theme.id}>
             <Theme theme={theme}/>
-            {events.map(function (event, id) {
-              return <EventCard key={id} event={event}/>
+            {events.map(function (events, id) {
+              return <EventCard key={id} event={events}/>
             })}
           </section>
         )
       })}
-      
+
     </main>
   )
 }

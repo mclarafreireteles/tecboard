@@ -1,13 +1,13 @@
 import './selectlist-form.style.css'
 
-export function SelectListForm({ options, name, id }) {
+export function SelectListForm({ options, name, id, required }) {
     return (
-        <select className="select" name={name} id={id} defaultValue="">
+        <select className="select" name={name} id={id} defaultValue="" required={required}>
             <option className='option' value="" disabled>
                 Selecione uma opção
             </option>
             {options.map((option) => (
-                <option className='option' key={option.id} value={option.value}>
+                <option className='option' key={option.id} value={option.name}>
                     {option.name
                         .split(" ")
                         .map(
