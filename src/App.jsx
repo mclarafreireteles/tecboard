@@ -60,7 +60,11 @@ function App() {
             <section className='theme' key={theme.id}>
               <Theme theme={theme} />
               <div className="events">
-                {events.map(function (events, id) {
+                {events
+                  .filter(function (event) {
+                    return event.theme.id == theme.id;
+                  })
+                  .map(function (events, id) {
                   return <EventCard key={id} event={events} />
                 })}
               </div>
