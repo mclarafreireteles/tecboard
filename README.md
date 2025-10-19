@@ -22,8 +22,6 @@ It was developed as a learning project to practice React 19, focusing on compone
 
 During the development of Tecboard, I learned and applied key concepts such as:
 
-- React 19 fundamentals
-
 - Develop interactive forms using FormData and custom selectors. 
 
 - React 19 fundamentals and component lifecycle (using hooks).  

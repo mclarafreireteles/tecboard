@@ -56,6 +56,11 @@ function App() {
       <EventForm themes={themes} onSubmit={addEvent} />
       <section className="container">
         {themes.map(function (theme) {
+          if (!events.some(function(event){
+              return event.theme.id == theme.id;
+          })) {
+            return null;
+          }
           return (
             <section className='theme' key={theme.id}>
               <Theme theme={theme} />
