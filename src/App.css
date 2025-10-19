@@ -10,6 +10,11 @@ header {
   justify-content: center;
 }
 
+main {
+  margin-bottom: 32px;
+
+}
+
 .theme {
   display: flex;
   flex-direction: column;
